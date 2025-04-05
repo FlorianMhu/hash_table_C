@@ -1,11 +1,15 @@
 #ifndef HASH_TABLE_H
 #define HASH_TABLE_H
 
-#define HASH_TABLE_INIT_SIZE 53
+#define HASH_TABLE_INIT_SIZE 50
 
 /*Prime number used for hashing*/
 #define HT_PRIME_1 263
 #define HT_PRIME_2 401
+
+/*Hash table load*/
+#define UPPER_LIMIT_LOAD 70
+#define LOWER_LIMIT_LOAD 10
 
 //Item struct
 typedef struct{
@@ -18,6 +22,7 @@ typedef struct{
 typedef struct{
     int size;
     int count;
+    int base_size;
     HT_Item ** items;
 }HT_HashTable;
 

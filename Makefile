@@ -4,7 +4,7 @@ BUILD_DIR 		:= ./build
 SRC_DIRS 		:= ./src
 
 # Compilations flags
-CFLAGS 			:= -Wall -Wextra -pedantic
+CFLAGS 			:= -Wall -Wextra -pedantic -g
 LDFLAGS         := 
 
 # Find all the C files we want to compile
